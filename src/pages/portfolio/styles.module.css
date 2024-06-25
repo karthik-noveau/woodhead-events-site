@@ -1,0 +1,10 @@
+.sectionWrapper {
+  height: 800px;
+  width: 100%;
+
+  background: var(--primary-gradiant-200-ff-background);
+  background: var(--primary-gradiant-200-chrome-background);
+  background: var(--primary-gradiant-200-opera-background);
+  background: var(--primary-gradiant-200-i10-background);
+  background: var(--primary-gradiant-200-global-background);
+}

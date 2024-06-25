@@ -1,0 +1,87 @@
+.formValidation {
+  --input-bg-color: #6b6b6b82;
+  --input-font-color: #e7e7e7;
+  --inpout-error-color: #c5105d;
+  --input-border-color: transparent;
+  --input-placeholder-color: #777777;
+  --input-button-bg-color: yellow;
+
+  --input-border-color-hover: #bf1f95;
+}
+.formValidation :global(.ant-form-item input) {
+  height: 45px;
+  border-radius: 3px;
+  width: 100%;
+}
+.formValidation :global(.ant-form-item textarea) {
+  height: 65px;
+  border-radius: 3px;
+}
+.formValidation .ant-form-item input {
+  height: 45px;
+  border-radius: 3px;
+  background-color: var(--input-bg-color) !important;
+  color: var(--input-font-color);
+  border-color: var(--input-border-color) !important;
+}
+.formValidation .ant-form-item input::placeholder,
+.formValidation .ant-form-item textarea::placeholder {
+  color: var(--input-placeholder-color);
+}
+.formValidation .ant-form-item textarea {
+  height: 75px;
+  border-radius: 3px;
+  background-color: var(--input-bg-color) !important;
+  color: var(--input-font-color);
+  border-color: var(--input-border-color) !important;
+}
+.formValidation .ant-input:hover {
+  border-color: var(--input-border-color-hover) !important;
+  transition: all 0.5s;
+}
+.formValidation .ant-input:focus {
+  border-color: var(--input-border-color-hover) !important;
+}
+.formValidation .ant-form-item button {
+  background-size: 200% 100%;
+  background-position: right center;
+  width: 150px;
+  height: 40px;
+  transition: all 0.5s;
+  border-radius: 25px;
+  font-size: 19px;
+
+  background: var(--primary-gradiant-100-ff-background) !important;
+  background: var(--primary-gradiant-100-chrome-background) !important;
+  background: var(--primary-gradiant-100-opera-background) !important;
+  background: var(--primary-gradiant-100-ie6-filter) !important;
+  background: var(--primary-gradiant-100-ie10-background) !important;
+  background: var(--primary-gradiant-100-gloabal-background) !important;
+}
+.formValidation .ant-btn-primary:hover {
+  transition: all 0.5s;
+  background-size: 200% 100%;
+  background-position: right center;
+
+  background: var(--primary-gradiant-100-ff-background) !important;
+  background: var(--primary-gradiant-100-chrome-background) !important;
+  background: var(--primary-gradiant-100-opera-background) !important;
+  background: var(--primary-gradiant-100-ie6-filter) !important;
+  background: var(--primary-gradiant-100-ie10-background) !important;
+  background: var(--primary-gradiant-100-gloabal-background) !important;
+}
+
+.formValidation .ant-form-item .ant-form-item-explain-error {
+  font-size: 12px;
+  color: var(--inpout-error-color);
+}
+
+/* ----------------media quries----------------
+  --------------------------------------------- */
+@media (max-width: 425px) {
+  .formValidation .ant-form-item button {
+    width: 130px;
+    height: 40px;
+    font-size: 17px;
+  }
+}

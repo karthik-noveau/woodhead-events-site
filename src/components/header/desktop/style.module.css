@@ -1,0 +1,42 @@
+.headerWrapper {
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+  /* border-bottom: 0.8px solid #484848; */
+}
+.headerContainer {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+.leftInfo img {
+  width: 60px;
+  object-fit: contain;
+  cursor: pointer;
+}
+.centerInfo {
+  display: flex;
+  gap: 25px;
+}
+.centerInfo p {
+  font-size: 19px;
+  color: #e2e2e2;
+  cursor: pointer;
+}
+.rightInfo {
+  color: white;
+  background-color: pink;
+  border-radius: 8px;
+  height: fit-content;
+  padding: 6px 30px;
+  cursor: pointer;
+
+  background: var(--primary-gradiant-100-ff-background);
+  background: var(--primary-gradiant-100-chrome-background);
+  background: var(--primary-gradiant-100-opera-background);
+  background: var(--primary-gradiant-100-ie6-filter);
+  background: var(--primary-gradiant-100-ie10-background);
+  background: var(--primary-gradiant-100-gloabal-background);
+}

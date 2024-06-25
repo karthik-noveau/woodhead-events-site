@@ -1,0 +1,192 @@
+.homeBannerWrapper {
+  position: relative;
+  height: calc(100vh - 100px);
+}
+
+.homeBannerWrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(./images/home-bg.jpg) no-repeat;
+  background-size: cover;
+  filter: brightness(0.4);
+  z-index: 0;
+}
+
+.homeBannerWrapper .textContainer {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 100%;
+}
+.homeBannerWrapper .titleInfo {
+  color: #e5e5e5;
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 50px;
+}
+.homeBannerWrapper .titleInfo span {
+  font-weight: 500;
+  background: var(--primary-gradiant-100-ff-background);
+  background: var(--primary-gradiant-100-chrome-background);
+  background: var(--primary-gradiant-100-opera-background);
+  background: var(--primary-gradiant-100-ie6-filter);
+  background: var(--primary-gradiant-100-ie10-background);
+  background: var(--primary-gradiant-100-gloabal-background);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.homeBannerWrapper .subTextInfo {
+  color: #d3d3d3;
+  width: 100%;
+  text-align: center;
+}
+
+.whoWeAreContainer {
+  background: url(../../common/images/spinner-bg.jpg) no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+.whoWeAreSectionTitle {
+  padding-top: 60px;
+  color: #b4b4b4;
+  font-size: 35px;
+  font-weight: 400;
+  text-align: center;
+}
+.whoWeAreSectionInfo {
+  color: #b8b8b8;
+  font-size: 14px;
+  width: 90%;
+  text-align: center;
+  padding-top: 50px;
+  line-height: 32px;
+}
+
+.booknowContainer {
+  min-width: 55%;
+  max-width: 760px;
+  background-color: #ffffff1f;
+  border-radius: 9px;
+  display: grid;
+  grid-template-columns: auto max-content;
+  gap: 70px;
+  padding: 25px 50px;
+  margin-top: 50px;
+}
+.booknowContainer .contentInfo {
+  color: #9c9c9c;
+  font-size: 14px;
+  line-height: 32px;
+}
+.booknowContainer button {
+  height: fit-content;
+  padding: 5px 20px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 300;
+  font-size: 13px;
+  text-transform: none;
+
+  background: var(--primary-gradiant-100-ff-background);
+  background: var(--primary-gradiant-100-chrome-background);
+  background: var(--primary-gradiant-100-opera-background);
+  background: var(--primary-gradiant-100-ie6-filter);
+  background: var(--primary-gradiant-100-ie10-background);
+  background: var(--primary-gradiant-100-gloabal-background);
+}
+.ourServicesWrapper {
+  -webkit-box-shadow: inset 10px 200px 261px -84px rgba(11, 12, 40, 1);
+  -moz-box-shadow: inset 10px 200px 261px -84px rgba(11, 12, 40, 1);
+  box-shadow: inset 10px 200px 261px -84px rgba(11, 12, 40, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 200px;
+
+  background: var(--primary-gradiant-200-ff-background);
+  background: var(--primary-gradiant-200-chrome-background);
+  background: var(--primary-gradiant-200-opera-background);
+  background: var(--primary-gradiant-200-i10-background);
+  background: var(--primary-gradiant-200-global-background);
+}
+.ourServicesWrapper .title {
+  padding-top: 60px;
+  color: #b4b4b4;
+  font-size: 35px;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.ourServicesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  gap: 50px;
+}
+.serviceItem {
+  color: #b7b7b7;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 15px;
+  height: fit-content;
+  background-color: #ffffff1f;
+}
+.ourServicesContainer .leftInfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-content: center;
+}
+.ourServicesContainer .rightInfo img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50px 50px 0 0;
+  position: relative;
+  top: 15px;
+  right: 15px;
+}
+.ourServicesContainer .rightInfo .imgWrapper {
+  border-radius: 50px 50px 0 0;
+  border: 1.5px solid #868686;
+  border-bottom: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slandingButtonTopPositioned {
+  background: #c62091;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  transform: skew(146deg) rotate(351deg);
+}
+.slandingButton {
+  background: #3b0162;
+  color: white;
+  height: 44px;
+  width: fit-content;
+  padding: 0 23px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 7px;
+  left: 7px;
+}
+.slandingButton span {
+  transform: skew(32deg) rotate(0deg);
+}

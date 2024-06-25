@@ -1,0 +1,78 @@
+/* get last name for css propery name */
+
+* {
+  /* --------------primary gradiant 100------------- */
+  /* ff 3.6+ */
+  --primary-gradiant-100-ff-background: -moz-linear-gradient(
+    199deg,
+    rgba(107, 20, 208, 1) 0%,
+    rgba(198, 32, 145, 1) 72%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  --primary-gradiant-100-chrome-background: -webkit-linear-gradient(
+    199deg,
+    rgba(107, 20, 208, 1) 0%,
+    rgba(198, 32, 145, 1) 72%
+  );
+
+  /* opera 11.10+ */
+  --primary-gradiant-100-opera-background: -o-linear-gradient(
+    199deg,
+    rgba(107, 20, 208, 1) 0%,
+    rgba(198, 32, 145, 1) 72%
+  );
+
+  /* ie 6-9 */
+  --primary-gradiant-100-ie6-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C62091', endColorstr='#6B14D0', GradientType=1 );
+
+  /* ie 10+ */
+  --primary-gradiant-100-ie10-background: -ms-linear-gradient(
+    199deg,
+    rgba(107, 20, 208, 1) 0%,
+    rgba(198, 32, 145, 1) 72%
+  );
+
+  /* global 94%+ browsers support */
+  --primary-gradiant-100-gloabal-background: linear-gradient(
+    199deg,
+    rgba(107, 20, 208, 1) 0%,
+    rgba(198, 32, 145, 1) 72%
+  );
+
+  /* --------------primary gradiant 200------------- */
+  /* ff 3.6+ */
+  --primary-gradiant-200-ff-background: -moz-radial-gradient(
+    circle at 50% 50%,
+    rgba(29, 9, 27, 1) 0%,
+    rgba(30, 13, 68, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  --primary-gradiant-200-chrome-background: -webkit-radial-gradient(
+    circle at 50% 50%,
+    rgba(29, 9, 27, 1) 0%,
+    rgba(30, 13, 68, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  --primary-gradiant-200-opera-background: -o-radial-gradient(
+    circle at 50% 50%,
+    rgba(29, 9, 27, 1) 0%,
+    rgba(30, 13, 68, 1) 100%
+  );
+
+  /* ie 10+ */
+  --primary-gradiant-200-i10-background: -ms-radial-gradient(
+    circle at 50% 50%,
+    rgba(29, 9, 27, 1) 0%,
+    rgba(30, 13, 68, 1) 100%
+  );
+
+  /* global 92%+ browsers support */
+  --primary-gradiant-200-global-background: radial-gradient(
+    circle at 50% 50%,
+    rgba(29, 9, 27, 1) 0%,
+    rgba(30, 13, 68, 1) 100%
+  );
+}
