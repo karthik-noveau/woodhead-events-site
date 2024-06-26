@@ -4,7 +4,7 @@
   --inpout-error-color: #c5105d;
   --input-border-color: transparent;
   --input-placeholder-color: #777777;
-  --input-button-bg-color: yellow;
+  --input-button-bg-color: #bf1f95;
 
   --input-border-color-hover: #bf1f95;
 }
@@ -55,27 +55,27 @@
     199deg,
     var(--gradient-color-100-primary) 0%,
     var(--gradient-color-100-secondary) 72%
-  );
+  ) !important;
   background: -webkit-linear-gradient(
     199deg,
     var(--gradient-color-100-primary) 0%,
     var(--gradient-color-100-secondary) 72%
-  );
+  ) !important;
   background: -o-linear-gradient(
     199deg,
     var(--gradient-color-100-primary) 0%,
     var(--gradient-color-100-secondary) 72%
-  );
+  ) !important;
   background: -ms-linear-gradient(
     199deg,
     var(--gradient-color-100-primary) 0%,
     var(--gradient-color-100-secondary) 72%
-  );
+  ) !important;
   background: linear-gradient(
     199deg,
     var(--gradient-color-100-primary) 0%,
     var(--gradient-color-100-secondary) 72%
-  );
+  ) !important;
 }
 .formValidation .ant-btn-primary:hover {
   transition: all 0.5s;
@@ -86,27 +86,27 @@
     199deg,
     var(--gradient-color-100-primary) 0%,
     var(--gradient-color-100-secondary) 72%
-  );
+  ) !important;
   background: -webkit-linear-gradient(
     199deg,
     var(--gradient-color-100-primary) 0%,
     var(--gradient-color-100-secondary) 72%
-  );
+  ) !important;
   background: -o-linear-gradient(
     199deg,
     var(--gradient-color-100-primary) 0%,
     var(--gradient-color-100-secondary) 72%
-  );
+  ) !important;
   background: -ms-linear-gradient(
     199deg,
     var(--gradient-color-100-primary) 0%,
     var(--gradient-color-100-secondary) 72%
-  );
+  ) !important;
   background: linear-gradient(
     199deg,
     var(--gradient-color-100-primary) 0%,
     var(--gradient-color-100-secondary) 72%
-  );
+  ) !important;
 }
 
 .formValidation .ant-form-item .ant-form-item-explain-error {
