@@ -6,12 +6,34 @@
   width: 100%;
   transition: all 0.5s;
   padding-bottom: 15px;
-  border-top: 1px solid #313131;  
-  background: var(--primary-gradiant-200-ff-background);
-  background: var(--primary-gradiant-200-chrome-background);
-  background: var(--primary-gradiant-200-opera-background);
-  background: var(--primary-gradiant-200-i10-background);
-  background: var(--primary-gradiant-200-global-background);
+  /* border-top: 1px solid #313131; */
+
+  background: -moz-radial-gradient(
+    circle at 50% 50%,
+    var(--gradient-color-300-primary) 0%,
+    var(--gradient-color-300-secondary) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle at 50% 50%,
+    var(--gradient-color-300-primary) 0%,
+    var(--gradient-color-300-secondary) 100%
+  );
+  background: -o-radial-gradient(
+    circle at 50% 50%,
+    var(--gradient-color-300-primary) 0%,
+    var(--gradient-color-300-secondary) 100%
+  );
+  background: -ms-radial-gradient(
+    circle at 50% 50%,
+    var(--gradient-color-300-primary) 0%,
+    var(--gradient-color-300-secondary) 100%
+  );
+  background: radial-gradient(
+    circle at 50% 50%,
+    var(--gradient-color-300-primary) 0%,
+    var(--gradient-color-300-secondary) 100%
+  );
+  
 }
 .footerContainer {
   width: 70%;
@@ -62,12 +84,31 @@
   place-items: center;
   transition: all 2s;
 
-  background: var(--primary-gradiant-100-ff-background);
-  background: var(--primary-gradiant-100-chrome-background);
-  background: var(--primary-gradiant-100-opera-background);
-  background: var(--primary-gradiant-100-ie6-filter);
-  background: var(--primary-gradiant-100-ie10-background);
-  background: var(--primary-gradiant-100-gloabal-background);
+  background: -moz-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -webkit-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -o-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -ms-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
 }
 .mediaIconContainer a:hover {
   opacity: 0.5;

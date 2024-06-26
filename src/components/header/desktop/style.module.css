@@ -5,6 +5,11 @@
   width: 100%;
   background-color: black;
   /* border-bottom: 0.8px solid #484848; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
 }
 .headerContainer {
   display: flex;
@@ -33,10 +38,29 @@
   padding: 6px 30px;
   cursor: pointer;
 
-  background: var(--primary-gradiant-100-ff-background);
-  background: var(--primary-gradiant-100-chrome-background);
-  background: var(--primary-gradiant-100-opera-background);
-  background: var(--primary-gradiant-100-ie6-filter);
-  background: var(--primary-gradiant-100-ie10-background);
-  background: var(--primary-gradiant-100-gloabal-background);
+  background: -moz-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -webkit-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -o-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -ms-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
 }

@@ -51,7 +51,9 @@ export const Connect = () => {
                   <div className={styles.iconWrapper}>
                     <GrLocation />
                   </div>
-                  <div className={styles.infoWrapper}>
+                  <div
+                    className={`${styles.infoWrapper} ${styles.addressWrapper}`}
+                  >
                     <p>Address</p>
                     <p>206/108 , Broadway, 2nd Floor , Chennai-600 108.</p>
                   </div>

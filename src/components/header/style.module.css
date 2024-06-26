@@ -1,0 +1,12 @@
+.mobileHeader {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .deskHeader {
+    display: none;
+  }
+  .mobileHeader {
+    display: block;
+  }
+}

@@ -1,0 +1,10 @@
+.headeWrapper {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}

@@ -1,22 +1,45 @@
 .sectionWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  padding-bottom: 100px;
-  background: var(--primary-gradiant-200-ff-background);
-  background: var(--primary-gradiant-200-chrome-background);
-  background: var(--primary-gradiant-200-opera-background);
-  background: var(--primary-gradiant-200-i10-background);
-  background: var(--primary-gradiant-200-global-background);
+
+  -webkit-box-shadow: inset 10px 200px 261px -84px #04040f;
+  -moz-box-shadow: inset 10px 200px 261px -84px #04040f;
+  box-shadow: inset 10px 200px 261px -84px #04040f;
+
+  background: -moz-linear-gradient(
+    322deg,
+    #2c0728 0%,
+    #0c051b 46%,
+    #0c051b 100%
+  );
+  background: -webkit-linear-gradient(
+    322deg,
+    #2c0728 0%,
+    #0c051b 46%,
+    #0c051b 100%
+  );
+  background: -o-linear-gradient(322deg, #2c0728 0%, #0c051b 46%, #0c051b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2C0728', endColorstr='#0C051B', GradientType=1 );
+  background: -ms-linear-gradient(
+    322deg,
+    #2c0728 0%,
+    #0c051b 46%,
+    #0c051b 100%
+  );
+  background: linear-gradient(322deg, #2c0728 0%, #0c051b 46%, #0c051b 100%);
 }
 .contactWrapper {
   width: 90%;
-  padding: 60px;
+  padding: 60px 0;
 }
 .contactContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 70px;
   background: #8080801f;
-  padding: 50px;
+  padding: 50px 50px;
 }
 .leftInfo {
   display: grid;
@@ -36,10 +59,10 @@
   padding-left: 30px;
 }
 .rightInfoWrapper {
-  background-color: #202020;
+  background-color: #ffffff08;
   display: grid;
   gap: 50px;
-  height: -webkit-fill-available;
+  /* height: -webkit-fill-available; */
   padding: 50px;
   width: -moz-fit-content;
   width: fit-content;
@@ -60,16 +83,40 @@
   place-items: center;
   font-size: 22px;
   color: white;
-  background: var(--primary-gradiant-100-ff-background);
-  background: var(--primary-gradiant-100-chrome-background);
-  background: var(--primary-gradiant-100-opera-background);
-  background: var(--primary-gradiant-100-ie6-filter);
-  background: var(--primary-gradiant-100-ie10-background);
-  background: var(--primary-gradiant-100-gloabal-background);
+
+  background: -moz-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -webkit-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -o-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -ms-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
 }
 .contactItemContainer .infoWrapper {
   display: grid;
   gap: 6px;
+}
+.contactItemContainer .infoWrapper.addressWrapper {
+  position: relative;
+  top: 12px;
 }
 .contactItemContainer .infoWrapper p:nth-of-type(1) {
   color: #d2d2d2;
@@ -101,8 +148,79 @@
   width: 100%;
 }
 .mapContainer iframe {
-  width: 90%;
-  border-radius: 10px;
+  width: 100%;
+  border-radius: 0px;
+  padding: 10px;
   height: 400px;
   border: none;
+}
+
+/* ------------------------------------ media queries -------------------------------
+------------------------------------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+  .mapContainer iframe {
+    height: 300px;
+  }
+  .contactContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+  }
+  .leftInfo {
+    align-items: center;
+    justify-content: center;
+    padding-right: 0;
+  }
+  .rightInfo {
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .leftInfoWrapper {
+    width: 400px;
+  }
+  .contactContainer {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rightInfoWrapper {
+    padding: 50px 25px;
+  }
+  .leftInfoWrapper {
+    width: 350px;
+  }
+  .contactItemContainer {
+    width: 300px;
+  }
+  .contactContainer {
+    padding: 50px 25px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 460px) {
+  .sectionWrapper {
+    padding: 10px;
+    width: auto;
+  }
+  .contactContainer {
+    padding: 20px;
+  }
+  .leftInfoWrapper {
+    width: 100%;
+  }
+  .contactItemContainer {
+    width: 100%;
+  }
+  .leftInfo {
+    display: flex;
+  }
+  .mapContainer iframe {
+    padding: 0;
+    height: 500px;
+  }
 }

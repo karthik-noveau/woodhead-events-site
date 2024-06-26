@@ -51,24 +51,62 @@
   border-radius: 25px;
   font-size: 19px;
 
-  background: var(--primary-gradiant-100-ff-background) !important;
-  background: var(--primary-gradiant-100-chrome-background) !important;
-  background: var(--primary-gradiant-100-opera-background) !important;
-  background: var(--primary-gradiant-100-ie6-filter) !important;
-  background: var(--primary-gradiant-100-ie10-background) !important;
-  background: var(--primary-gradiant-100-gloabal-background) !important;
+  background: -moz-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -webkit-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -o-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -ms-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
 }
 .formValidation .ant-btn-primary:hover {
   transition: all 0.5s;
   background-size: 200% 100%;
   background-position: right center;
 
-  background: var(--primary-gradiant-100-ff-background) !important;
-  background: var(--primary-gradiant-100-chrome-background) !important;
-  background: var(--primary-gradiant-100-opera-background) !important;
-  background: var(--primary-gradiant-100-ie6-filter) !important;
-  background: var(--primary-gradiant-100-ie10-background) !important;
-  background: var(--primary-gradiant-100-gloabal-background) !important;
+  background: -moz-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -webkit-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -o-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -ms-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
 }
 
 .formValidation .ant-form-item .ant-form-item-explain-error {
@@ -84,4 +122,6 @@
     height: 40px;
     font-size: 17px;
   }
+}
+@media (max-width: 768px) {
 }

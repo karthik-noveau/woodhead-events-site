@@ -10,6 +10,7 @@
   flex-direction: column;
   align-items: center;
   z-index: 1;
+  padding: 0;
 }
 .aboutContainer::before {
   content: "";
@@ -23,11 +24,35 @@
   filter: brightness(0.7);
   z-index: 0;
 
-  background: var(--primary-gradiant-200-ff-background);
-  background: var(--primary-gradiant-200-chrome-background);
-  background: var(--primary-gradiant-200-opera-background);
-  background: var(--primary-gradiant-200-i10-background);
-  background: var(--primary-gradiant-200-global-background);
+  background: -moz-radial-gradient(
+    circle at 50% 50%,
+    var(--gradient-color-200-primary) 0%,
+    var(--gradient-color-200-secondary) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle at 50% 50%,
+    var(--gradient-color-200-primary) 0%,
+    var(--gradient-color-200-secondary) 100%
+  );
+  background: -o-radial-gradient(
+    circle at 50% 50%,
+    var(--gradient-color-200-primary) 0%,
+    var(--gradient-color-200-secondary) 100%
+  );
+  background: -ms-radial-gradient(
+    circle at 50% 50%,
+    var(--gradient-color-200-primary) 0%,
+    var(--gradient-color-200-secondary) 100%
+  );
+  background: radial-gradient(
+    circle at 50% 50%,
+    var(--gradient-color-200-primary) 0%,
+    var(--gradient-color-200-secondary) 100%
+  );
+
+  -webkit-box-shadow: inset 10px 200px 261px -84px #04040f;
+  -moz-box-shadow: inset 10px 200px 261px -84px #04040f;
+  box-shadow: inset 10px 200px 261px -84px #04040f;
 }
 .aboutSectionTitle {
   padding-top: 60px;
@@ -36,12 +61,33 @@
 
   font-size: 35px;
   font-weight: 400;
-  background: var(--primary-gradiant-100-ff-background);
-  background: var(--primary-gradiant-100-chrome-background);
-  background: var(--primary-gradiant-100-opera-background);
-  background: var(--primary-gradiant-100-ie6-filter);
-  background: var(--primary-gradiant-100-ie10-background);
-  background: var(--primary-gradiant-100-gloabal-background);
+
+  background: -moz-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -webkit-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -o-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -ms-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -84,12 +130,31 @@
   font-size: 13px;
   text-transform: none;
 
-  background: var(--primary-gradiant-100-ff-background);
-  background: var(--primary-gradiant-100-chrome-background);
-  background: var(--primary-gradiant-100-opera-background);
-  background: var(--primary-gradiant-100-ie6-filter);
-  background: var(--primary-gradiant-100-ie10-background);
-  background: var(--primary-gradiant-100-gloabal-background);
+  background: -moz-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -webkit-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -o-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -ms-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
 }
 
 .advantageWrapper {
@@ -101,15 +166,35 @@
   padding-top: 60px;
   color: #b4b4b4;
   text-align: center;
-
   font-size: 35px;
   font-weight: 400;
-  background: var(--primary-gradiant-100-ff-background);
-  background: var(--primary-gradiant-100-chrome-background);
-  background: var(--primary-gradiant-100-opera-background);
-  background: var(--primary-gradiant-100-ie6-filter);
-  background: var(--primary-gradiant-100-ie10-background);
-  background: var(--primary-gradiant-100-gloabal-background);
+
+  background: -moz-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -webkit-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -o-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -ms-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -117,18 +202,82 @@
   -moz-text-fill-color: transparent;
 }
 .advantageContainer {
-  width: 90%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
   margin-top: 50px;
+  padding: 0 10px;
 }
 .advantageContainer .advantageItem {
   color: #b7b7b7;
   border-radius: 25px;
-  padding: 10px 20px;
+  padding: 10px 30px;
   font-size: 15px;
   height: fit-content;
   background-color: #ffffff1f;
+}
+
+/* ------------------------------------ media queries -------------------------------
+------------------------------------------------------------------------------------- */
+
+@media (max-width: 1230px) {
+  .aboutSectionInfo {
+    padding-top: 30px;
+  }
+  .advantageWrapper {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+  .advantageContainer {
+    margin-top: 30px;
+  }
+  .advantageWrapper .title {
+    padding-top: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .booknowContainer {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .aboutSectionInfo {
+    padding-top: 22px;
+  }
+  .booknowContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 25px 20px;
+    margin-top: 30px;
+    justify-content: center;
+  }
+  .booknowContainer button {
+    width: fit-content;
+  }
+  .aboutContainer {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 460px) {
+  .aboutSectionInfo {
+    width: 100%;
+  }
+  .aboutContainer {
+    padding: 0 20px;
+  }
+  .booknowContainer {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media (max-width: 420px) {
+}
+
+@media (max-width: 380px) {
+}
+@media (max-width: 340px) {
 }

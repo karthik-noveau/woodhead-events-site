@@ -2,9 +2,33 @@
   height: 800px;
   width: 100%;
 
-  background: var(--primary-gradiant-200-ff-background);
-  background: var(--primary-gradiant-200-chrome-background);
-  background: var(--primary-gradiant-200-opera-background);
-  background: var(--primary-gradiant-200-i10-background);
-  background: var(--primary-gradiant-200-global-background);
+  -webkit-box-shadow: inset 10px 200px 261px -84px #04040f;
+  -moz-box-shadow: inset 10px 200px 261px -84px #04040f;
+  box-shadow: inset 10px 200px 261px -84px #04040f;
+
+  background: -moz-radial-gradient(
+    circle at 50% 50%,
+    var(--gradient-color-200-primary) 0%,
+    var(--gradient-color-200-secondary) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle at 50% 50%,
+    var(--gradient-color-200-primary) 0%,
+    var(--gradient-color-200-secondary) 100%
+  );
+  background: -o-radial-gradient(
+    circle at 50% 50%,
+    var(--gradient-color-200-primary) 0%,
+    var(--gradient-color-200-secondary) 100%
+  );
+  background: -ms-radial-gradient(
+    circle at 50% 50%,
+    var(--gradient-color-200-primary) 0%,
+    var(--gradient-color-200-secondary) 100%
+  );
+  background: radial-gradient(
+    circle at 50% 50%,
+    var(--gradient-color-200-primary) 0%,
+    var(--gradient-color-200-secondary) 100%
+  );
 }

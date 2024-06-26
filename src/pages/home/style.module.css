@@ -12,7 +12,7 @@
   bottom: 0;
   background: url(./images/home-bg.jpg) no-repeat;
   background-size: cover;
-  filter: brightness(0.4);
+  filter: brightness(0.5);
   z-index: 0;
 }
 
@@ -23,7 +23,7 @@
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
-  width: 100%;
+  padding: 50px;
 }
 .homeBannerWrapper .titleInfo {
   color: #e5e5e5;
@@ -34,12 +34,33 @@
 }
 .homeBannerWrapper .titleInfo span {
   font-weight: 500;
-  background: var(--primary-gradiant-100-ff-background);
-  background: var(--primary-gradiant-100-chrome-background);
-  background: var(--primary-gradiant-100-opera-background);
-  background: var(--primary-gradiant-100-ie6-filter);
-  background: var(--primary-gradiant-100-ie10-background);
-  background: var(--primary-gradiant-100-gloabal-background);
+
+  background: -moz-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -webkit-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -o-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -ms-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -53,12 +74,28 @@
 }
 
 .whoWeAreContainer {
-  background: url(../../common/images/spinner-bg.jpg) no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-size: cover;
+  padding: 0 50px;
   padding-bottom: 100px;
+  position: relative;
+}
+.whoWeAreContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../../common/images/spinner-bg.jpg) no-repeat;
+  background-size: cover;
+  filter: brightness(0.3);
+  z-index: 0;
+
+  -webkit-box-shadow: inset -35px -200px 261px -160px rgba(0, 0, 0, 1);
+  -moz-box-shadow: inset -35px -200px 261px -160px rgba(0, 0, 0, 1);
+  box-shadow: inset -35px -200px 261px -160px rgba(0, 0, 0, 1);
 }
 .whoWeAreSectionTitle {
   padding-top: 60px;
@@ -66,6 +103,7 @@
   font-size: 35px;
   font-weight: 400;
   text-align: center;
+  z-index: 1;
 }
 .whoWeAreSectionInfo {
   color: #b8b8b8;
@@ -74,6 +112,7 @@
   text-align: center;
   padding-top: 50px;
   line-height: 32px;
+  z-index: 1;
 }
 
 .booknowContainer {
@@ -86,6 +125,7 @@
   gap: 70px;
   padding: 25px 50px;
   margin-top: 50px;
+  z-index: 1;
 }
 .booknowContainer .contentInfo {
   color: #9c9c9c;
@@ -101,27 +141,58 @@
   font-size: 13px;
   text-transform: none;
 
-  background: var(--primary-gradiant-100-ff-background);
-  background: var(--primary-gradiant-100-chrome-background);
-  background: var(--primary-gradiant-100-opera-background);
-  background: var(--primary-gradiant-100-ie6-filter);
-  background: var(--primary-gradiant-100-ie10-background);
-  background: var(--primary-gradiant-100-gloabal-background);
+  background: -moz-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -webkit-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -o-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -ms-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
 }
 .ourServicesWrapper {
-  -webkit-box-shadow: inset 10px 200px 261px -84px rgba(11, 12, 40, 1);
-  -moz-box-shadow: inset 10px 200px 261px -84px rgba(11, 12, 40, 1);
-  box-shadow: inset 10px 200px 261px -84px rgba(11, 12, 40, 1);
+  -webkit-box-shadow: inset 10px 200px 261px -84px #04040f;
+  -moz-box-shadow: inset 10px 200px 261px -84px #04040f;
+  box-shadow: inset 10px 200px 261px -84px #04040f;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 200px;
 
-  background: var(--primary-gradiant-200-ff-background);
-  background: var(--primary-gradiant-200-chrome-background);
-  background: var(--primary-gradiant-200-opera-background);
-  background: var(--primary-gradiant-200-i10-background);
-  background: var(--primary-gradiant-200-global-background);
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(322deg, #150313 0%, #12072b 100%);
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(322deg, #150313 0%, #12072b 100%);
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(322deg, #150313 0%, #12072b 100%);
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#150313', endColorstr='#1E0D44', GradientType=1 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(322deg, #150313 0%, #12072b 100%);
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(322deg, #150313 0%, #12072b 100%);
 }
 .ourServicesWrapper .title {
   padding-top: 60px;
@@ -167,13 +238,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 90%;
 }
 .slandingButtonTopPositioned {
   background: #c62091;
   width: fit-content;
   display: flex;
   align-items: center;
-  transform: skew(146deg) rotate(351deg);
+  transform: skew(146deg) rotate(356deg);
 }
 .slandingButton {
   background: #3b0162;
@@ -189,4 +261,112 @@
 }
 .slandingButton span {
   transform: skew(32deg) rotate(0deg);
+}
+
+/* ------------------------------------ media queries -------------------------------
+------------------------------------------------------------------------------------- */
+@media (max-width: 1230px) {
+  .ourServicesContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    width: 90%;
+    gap: 70px;
+  }
+  .ourServicesWrapper {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .ourServicesWrapper {
+    padding-bottom: 80px;
+  }
+  .ourServicesWrapper .title {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .ourServicesWrapper .title {
+    padding-top: 0;
+  }
+  .ourServicesWrapper {
+    padding-bottom: 100px;
+  }
+
+  .rightInfo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .ourServicesContainer .rightInfo .imgWrapper {
+    width: 100%;
+    height: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .whoWeAreSectionInfo {
+    padding-top: 22px;
+  }
+  .booknowContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 25px 20px;
+    margin-top: 30px;
+    justify-content: center;
+  }
+  .booknowContainer button {
+    width: fit-content;
+  }
+  .ourServicesWrapper {
+    padding-bottom: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .ourServicesContainer {
+    gap: 50px;
+  }
+  .slandingButton {
+    height: 40px;
+  }
+  .slandingButton span {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 460px) {
+  .homeBannerWrapper .textContainer {
+    padding: 20px;
+  }
+  .homeBannerWrapper .titleInfo {
+    line-height: 60px;
+    padding-bottom: 20px;
+  }
+  .whoWeAreSectionInfo {
+    width: 100%;
+  }
+  .whoWeAreContainer {
+    padding: 0 20px;
+  }
+  .ourServicesWrapper .title {
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+  .ourServicesContainer .rightInfo .imgWrapper,
+  .ourServicesContainer .rightInfo img {
+    border-radius: 20px 20px 0 0;
+  }
+}
+
+@media (max-width: 420px) {
+}
+
+@media (max-width: 380px) {
+  .slandingButton {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 340px) {
 }
