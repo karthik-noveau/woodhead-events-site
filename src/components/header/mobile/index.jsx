@@ -46,24 +46,35 @@ export const MobileHeader = () => {
       >
         <div className={styles.menuContainer}>
           <div className={styles.menuItemsContainer}>
-            <p className={styles.menuItem} onClick={() => onMenuClick("/")}>
+            <p
+              className={`${styles.menuItem} ${
+                isOpen ? "sui-aos-down1" : "sui-aos-up"
+              }`}
+              onClick={() => onMenuClick("/")}
+            >
               Home
             </p>
             <p
-              className={styles.menuItem}
+              className={`${styles.menuItem} ${
+                isOpen ? "sui-aos-down2" : "sui-aos-up"
+              }`}
               onClick={() => onMenuClick("/story")}
             >
               Story
             </p>
             <p
-              className={styles.menuItem}
+              className={`${styles.menuItem} ${
+                isOpen ? "sui-aos-down3" : "sui-aos-up"
+              }`}
               onClick={() => onMenuClick("/portfolio")}
             >
               Portfolio
             </p>
           </div>
           <div
-            className={styles.lastItem}
+            className={`${styles.lastItem} ${
+              isOpen ? "sui-aos-down4" : "sui-aos-up"
+            }`}
             onClick={() => onMenuClick("/connect")}
           >
             Connect
