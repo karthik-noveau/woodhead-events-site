@@ -5,13 +5,15 @@ import { GrLocation } from "react-icons/gr";
 
 import { Banner } from "../../components/banner";
 import { FormValidation } from "./form";
+import { ScrollToTop } from "../../common/scrollto_top";
 
 import styles from "./styles.module.css";
 
-import ConnectBannerBg from "./images/connect-bg.jpg";
+import ConnectBannerBg from "../../images/connect/connect-bg.jpg";
 import GoogleMap from "../../components/map";
 
-export const Connect = () => {
+export default function Connect() {
+  ScrollToTop();
   return (
     <React.Fragment>
       <Banner image={ConnectBannerBg} name="CONNECT" />
@@ -68,4 +70,4 @@ export const Connect = () => {
       </div>
     </React.Fragment>
   );
-};
+}

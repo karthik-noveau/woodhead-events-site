@@ -4,7 +4,7 @@ import { FOOTER_MENU_LINKS, SOCIAL_MEDIA_LINKS } from "./constant";
 
 import styles from "./footer.module.css";
 
-import Logo from "../../common/images/logo.svg";
+import Logo from "../../images/logo/logo.png";
 
 export const Footer = () => {
   return (
@@ -51,7 +51,10 @@ export const Footer = () => {
           </div>
           <div className={styles.rightInfo}>
             <span>Designed by</span>
-            <a href="https://skynoveau.in/" target="_blank"> Skynoveau Technology</a>
+            <a href="https://skynoveau.in/" target="_blank">
+              {" "}
+              Skynoveau Technology
+            </a>
           </div>
         </div>
       </div>

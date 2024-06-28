@@ -19,7 +19,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url(../../common/images/spinner-bg.jpg) no-repeat;
+  background: url(../../images//common//spinner-bg.jpg) no-repeat;
   background-size: cover;
   filter: brightness(0.7);
   z-index: 0;
@@ -95,8 +95,9 @@
   -moz-text-fill-color: transparent;
 }
 .aboutSectionInfo {
-  color: #b8b8b8;
-  font-size: 14px;
+  color: #a6a6a6;
+  font-size: 18px;
+  font-weight: 300;
   width: 90%;
   text-align: center;
   padding-top: 50px;
@@ -118,7 +119,7 @@
 }
 .booknowContainer .contentInfo {
   color: #9c9c9c;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 32px;
 }
 .booknowContainer button {
@@ -127,7 +128,7 @@
   border-radius: 8px;
   color: white;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 18px;
   text-transform: none;
 
   background: -moz-linear-gradient(
@@ -203,6 +204,7 @@
 }
 .advantageContainer {
   display: flex;
+  width: 80%;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
@@ -220,7 +222,6 @@
 
 /* ------------------------------------ media queries -------------------------------
 ------------------------------------------------------------------------------------- */
-
 @media (max-width: 1230px) {
   .aboutSectionInfo {
     padding-top: 30px;
@@ -237,9 +238,22 @@
   }
 }
 @media (max-width: 1024px) {
+  .aboutSectionInfo {
+    padding-top: 30px;
+    font-size: 15px;
+  }
+  .booknowContainer .contentInfo {
+    font-size: 15px;
+  }
+  .booknowContainer button {
+    font-size: 15px;
+  }
   .booknowContainer {
     margin-right: 50px;
     margin-left: 50px;
+  }
+  .advantageContainer {
+    width: 90%;
   }
 }
 @media (max-width: 768px) {

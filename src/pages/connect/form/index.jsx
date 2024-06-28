@@ -1,24 +1,60 @@
 import { Button, Form, Input } from "antd";
+import emailjs from "@emailjs/browser";
+import { v4 as uuidv4 } from "uuid";
 
 import "./style.override.css";
+import { useEffect, useRef, useState } from "react";
+
+const SERVICE_ID = "service_un9tyzb";
+const TEMPLATE_ID = "template_ensm8al";
+const PUBLICK_KEY = "YP-g34Pu1ZK4OB0bU";
 
 export const FormValidation = ({ className }) => {
-  const onFinish = (values) => {};
+  const buttonValue = "Submit";
+  const buttonSubmitValue = "Mail Sent";
+
+  const [buttonText, setButtonText] = useState("Submit");
+  let formRef = useRef(null);
+  const uniqueId = uuidv4();
+
+  const onFinish = (values) => {
+    setButtonText("Sending...");
+    emailjs
+      .sendForm(SERVICE_ID, TEMPLATE_ID, `#sui-form-${uniqueId}`, {
+        publicKey: PUBLICK_KEY,
+      })
+      .then(
+        () => {
+          setButtonText("Mail Sent");
+          setTimeout(() => {
+            setButtonText("Submit");
+          }, 2000);
+        },
+        (error) => {
+          setButtonText("Mail not send");
+          setTimeout(() => {
+            setButtonText("Submit");
+          }, 4000);
+        }
+      );
+  };
   const onFinishFailed = (errorInfo) => {};
 
   return (
     <Form
       name="basic"
+      id={`sui-form-${uniqueId}`}
+      ref={formRef}
       initialValues={{
         remember: true,
       }}
       onFinish={onFinish}
       onFinishFailed={onFinishFailed}
-      autoComplete="off"
+      autoComplete="on"
       className="formValidation"
     >
       <Form.Item
-        name="First name"
+        name="firstName"
         rules={[
           {
             required: true,
@@ -26,11 +62,11 @@ export const FormValidation = ({ className }) => {
           },
         ]}
       >
-        <Input placeholder="First name" />
+        <Input placeholder="First name" name="firstName" />
       </Form.Item>
 
       <Form.Item
-        name="Email Id"
+        name="email"
         rules={[
           {
             required: true,
@@ -39,11 +75,11 @@ export const FormValidation = ({ className }) => {
           },
         ]}
       >
-        <Input placeholder="Email Id" />
+        <Input placeholder="Email Id" name="email" />
       </Form.Item>
 
       <Form.Item
-        name="Phone number"
+        name="phoneNumber"
         rules={[
           {
             required: true,
@@ -51,11 +87,11 @@ export const FormValidation = ({ className }) => {
           },
         ]}
       >
-        <Input placeholder="Phone number" />
+        <Input placeholder="Phone number" name="phoneNumber" />
       </Form.Item>
 
       <Form.Item
-        name="Subject"
+        name="subject"
         rules={[
           {
             required: true,
@@ -63,11 +99,11 @@ export const FormValidation = ({ className }) => {
           },
         ]}
       >
-        <Input placeholder="Subject" />
+        <Input placeholder="Subject" name="subject" />
       </Form.Item>
 
       <Form.Item
-        name="Message"
+        name="message"
         rules={[
           {
             required: true,
@@ -75,12 +111,15 @@ export const FormValidation = ({ className }) => {
           },
         ]}
       >
-        <Input.TextArea placeholder="Tell us about yourself..." />
+        <Input.TextArea
+          placeholder="Tell us about yourself..."
+          name="message"
+        />
       </Form.Item>
 
       <Form.Item className="btn">
         <Button type="primary" htmlType="submit">
-          Submit
+          {buttonText}
         </Button>
       </Form.Item>
     </Form>

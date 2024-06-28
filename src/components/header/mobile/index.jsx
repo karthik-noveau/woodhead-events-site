@@ -1,15 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Sling as Hamburger } from "hamburger-react";
 
 import styles from "./style.module.css";
 import "./hamburger.override.css";
+import "./aos.style.css";
 
-import Logo from "../image/logo.svg";
+import Logo from "../../../images/logo/logo.png";
 
 export const MobileHeader = () => {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
 
   const onMenuClick = (path) => {
     setIsOpen(false);

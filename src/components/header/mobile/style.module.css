@@ -13,7 +13,7 @@
   padding: 0 20px;
 }
 .leftInfo img {
-  width: 50px;
+  width: 40px;
 }
 .rightInfo {
   color: rgb(224, 224, 224);
@@ -51,7 +51,7 @@
 
 .menuContainer {
   display: grid;
-  gap: 60px;
+  gap: 50px;
   align-items: center;
 }
 .menuItemsContainer {
@@ -69,10 +69,11 @@
 .lastItem {
   color: white;
   background-color: pink;
-  border-radius: 8px;
+  border-radius: 50px;
   height: fit-content;
-  padding: 6px 30px;
+  padding: 8px 50px;
   cursor: pointer;
+  font-size: 19px;
 
   background: -moz-linear-gradient(
     199deg,

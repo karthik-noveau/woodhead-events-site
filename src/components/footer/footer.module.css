@@ -8,32 +8,15 @@
   padding-bottom: 15px;
   /* border-top: 1px solid #313131; */
 
-  background: -moz-radial-gradient(
-    circle at 50% 50%,
-    var(--gradient-color-300-primary) 0%,
-    var(--gradient-color-300-secondary) 100%
-  );
+  background: -moz-radial-gradient(circle at 50% 50%, #0e040d 0%, #0b041b 100%);
   background: -webkit-radial-gradient(
     circle at 50% 50%,
-    var(--gradient-color-300-primary) 0%,
-    var(--gradient-color-300-secondary) 100%
+    #0e040d 0%,
+    #0b041b 100%
   );
-  background: -o-radial-gradient(
-    circle at 50% 50%,
-    var(--gradient-color-300-primary) 0%,
-    var(--gradient-color-300-secondary) 100%
-  );
-  background: -ms-radial-gradient(
-    circle at 50% 50%,
-    var(--gradient-color-300-primary) 0%,
-    var(--gradient-color-300-secondary) 100%
-  );
-  background: radial-gradient(
-    circle at 50% 50%,
-    var(--gradient-color-300-primary) 0%,
-    var(--gradient-color-300-secondary) 100%
-  );
-  
+  background: -o-radial-gradient(circle at 50% 50%, #0e040d 0%, #0b041b 100%);
+  background: -ms-radial-gradient(circle at 50% 50%, #0e040d 0%, #0b041b 100%);
+  background: radial-gradient(circle at 50% 50%, #0e040d 0%, #0b041b 100%);
 }
 .footerContainer {
   width: 70%;

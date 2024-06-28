@@ -10,7 +10,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url(./images/home-bg.jpg) no-repeat;
+  background: url(../../images/home/home-bg.jpg) no-repeat;
   background-size: cover;
   filter: brightness(0.5);
   z-index: 0;
@@ -71,6 +71,7 @@
   color: #d3d3d3;
   width: 100%;
   text-align: center;
+  font-size: 20px;
 }
 
 .whoWeAreContainer {
@@ -88,7 +89,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url(../../common/images/spinner-bg.jpg) no-repeat;
+  background: url(../../images/common/spinner-bg.jpg) no-repeat;
   background-size: cover;
   filter: brightness(0.3);
   z-index: 0;
@@ -99,7 +100,7 @@
 }
 .whoWeAreSectionTitle {
   padding-top: 60px;
-  color: #b4b4b4;
+  color: #a0a0a0;
   font-size: 35px;
   font-weight: 400;
   text-align: center;
@@ -107,9 +108,10 @@
 }
 .whoWeAreSectionInfo {
   color: #b8b8b8;
-  font-size: 14px;
+  font-size: 18px;
   width: 90%;
   text-align: center;
+  font-weight: 200;
   padding-top: 50px;
   line-height: 32px;
   z-index: 1;
@@ -129,7 +131,7 @@
 }
 .booknowContainer .contentInfo {
   color: #9c9c9c;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 32px;
 }
 .booknowContainer button {
@@ -138,7 +140,7 @@
   border-radius: 8px;
   color: white;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 15px;
   text-transform: none;
 
   background: -moz-linear-gradient(
@@ -212,7 +214,7 @@
   color: #b7b7b7;
   border-radius: 25px;
   padding: 10px 20px;
-  font-size: 15px;
+  font-size: 18px;
   height: fit-content;
   background-color: #ffffff1f;
 }
@@ -286,13 +288,21 @@
 }
 
 @media (max-width: 1024px) {
+  .whoWeAreSectionInfo {
+    font-size: 15px;
+  }
   .ourServicesWrapper .title {
     padding-top: 0;
   }
   .ourServicesWrapper {
     padding-bottom: 100px;
   }
-
+  .booknowContainer .contentInfo {
+    font-size: 15px;
+  }
+  .booknowContainer button {
+    font-size: 15px;
+  }
   .rightInfo {
     display: flex;
     justify-content: center;
@@ -301,6 +311,9 @@
   .ourServicesContainer .rightInfo .imgWrapper {
     width: 100%;
     height: 90%;
+  }
+  .serviceItem {
+    font-size: 15px;
   }
 }
 
@@ -361,6 +374,9 @@
 }
 
 @media (max-width: 420px) {
+  .homeBannerWrapper .subTextInfo {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 380px) {

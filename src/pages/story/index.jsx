@@ -2,10 +2,11 @@ import React from "react";
 import { Button } from "@mui/material";
 
 import { Banner } from "../../components/banner";
+import { ScrollToTop } from "../../common/scrollto_top";
 
 import styles from "./style.module.css";
 
-import bannerImage from "./images/about-bg-banner.jpg";
+import bannerImage from "../../images/story/about-bg-banner.jpg";
 
 const ADVANTAGES_LIST = [
   "Design",
@@ -18,7 +19,8 @@ const ADVANTAGES_LIST = [
   "Experience",
 ];
 
-export const Story = () => {
+export default function Story() {
+  ScrollToTop();
   return (
     <React.Fragment>
       <Banner image={bannerImage} name="STORY" />
@@ -59,4 +61,4 @@ export const Story = () => {
       </div>
     </React.Fragment>
   );
-};
+}

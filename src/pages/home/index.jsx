@@ -1,9 +1,11 @@
 import React from "react";
 import Button from "@mui/material/Button";
 
+import { ScrollToTop } from "../../common/scrollto_top";
+
 import styles from "./style.module.css";
 
-import HomeBanner from "./images/home-bg.jpg";
+import HomeBanner from "../../images/home/home-bg.jpg";
 
 const OUR_SERVICES_LIST = [
   "Conferences and Seminars",
@@ -20,7 +22,8 @@ const OUR_SERVICES_LIST = [
   "Sponsor dealership",
 ];
 
-export const Home = () => {
+export default function Home() {
+  ScrollToTop();
   return (
     <React.Fragment>
       <div className={styles.homeBannerWrapper}>
@@ -75,4 +78,4 @@ export const Home = () => {
       </div>
     </React.Fragment>
   );
-};
+}
