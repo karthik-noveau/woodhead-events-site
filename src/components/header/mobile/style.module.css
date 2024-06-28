@@ -1,5 +1,5 @@
-.headeWrapper {
-  width: 100%;
+/* style.module.css */
+.headerWrapper {
   height: 70px;
   background-color: black;
   z-index: 100;
@@ -7,4 +7,96 @@
   top: 0;
   right: 0;
   left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.leftInfo img {
+  width: 50px;
+}
+.rightInfo {
+  color: rgb(224, 224, 224);
+}
+.popupShow {
+  position: fixed;
+  top: 70px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  transition: clip-path 0.6s ease-in-out;
+  background-color: black; /* Slightly transparent gray */
+
+  clip-path: circle(100% at 50% 50%);
+}
+.popupHide {
+  position: fixed;
+  top: 70px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  transition: clip-path 0.6s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.9); /* Slightly transparent gray */
+
+  clip-path: circle(0% at 100% 0%);
+}
+
+.menuContainer {
+  display: grid;
+  gap: 60px;
+  align-items: center;
+}
+.menuItemsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.menuItemsContainer .menuItem {
+  color: #b4b4b4;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.lastItem {
+  color: white;
+  background-color: pink;
+  border-radius: 8px;
+  height: fit-content;
+  padding: 6px 30px;
+  cursor: pointer;
+
+  background: -moz-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -webkit-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -o-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: -ms-linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
+  background: linear-gradient(
+    199deg,
+    var(--gradient-color-100-primary) 0%,
+    var(--gradient-color-100-secondary) 72%
+  );
 }

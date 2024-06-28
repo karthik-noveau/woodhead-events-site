@@ -1,0 +1,7 @@
+/*  ---------aos override--------- */
+html:not(.no-js) [data-aos="fade-up"] {
+  transform: translate3d(0, 20px, 0);
+}
+html:not(.no-js) [data-aos="fade-left"] {
+  transform: translate3d(40px, 0, 0);
+}
