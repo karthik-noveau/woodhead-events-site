@@ -5,6 +5,8 @@ import "./common/global.css";
 import { Header } from "./components/header";
 import { Footer } from "./components/footer";
 import { FullScreenLoader as Loader } from "./components/fullscreen_loader";
+import { CustomCursor } from "./components/custom_cursor";
+import { SmoothScrollBarWrapper } from "./common/smooth_scroll_bar";
 
 const Home = React.lazy(() => import("./pages/home"));
 const Story = React.lazy(() => import("./pages/story"));
@@ -23,9 +25,11 @@ function App() {
   }, [location]);
 
   return (
-    <React.Fragment>
+    <SmoothScrollBarWrapper>
+      <CustomCursor />
       {isLoader && <Loader />}
       {!isLoader && <Header />}
+      {!isLoader && <div id="header-height-space" />}
       {!isLoader && (
         <Routes>
           <Route
@@ -63,8 +67,10 @@ function App() {
         </Routes>
       )}
       {!isLoader && <Footer />}
-    </React.Fragment>
+    </SmoothScrollBarWrapper>
   );
+
+  // return <FramerMotion />;
 }
 
 export default App;

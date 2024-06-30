@@ -13,7 +13,7 @@ import ConnectBannerBg from "../../images/connect/connect-bg.jpg";
 import GoogleMap from "../../components/map";
 
 export default function Connect() {
-  ScrollToTop();
+  // ScrollToTop();
   return (
     <React.Fragment>
       <Banner image={ConnectBannerBg} name="CONNECT" />

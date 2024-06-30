@@ -11,7 +11,31 @@ import Logo from "../../../images/logo/logo.png";
 export const MobileHeader = () => {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
+  const [navSize, setNavSize] = useState("70px");
+  const [navColor, setNavColor] = useState("black");
+  const [fontColor, setFontColor] = useState("#e2e2e2");
 
+  const listenScrollEvent = () => {
+    if (window.scrollY > 10) {
+      setNavColor("black");
+      setNavSize("80px");
+      setFontColor("black");
+    } else {
+      setNavColor("black");
+      setNavSize("70px");
+      setFontColor("#e2e2e2");
+    }
+  };
+
+  // scroll animation
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+    return () => {
+      window.removeEventListener("scroll", listenScrollEvent);
+    };
+  }, []);
+
+  //open and close animation
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -31,7 +55,14 @@ export const MobileHeader = () => {
 
   return (
     <React.Fragment>
-      <div className={styles.headerWrapper}>
+      <div
+        className={styles.headerWrapper}
+        style={{
+          backgroundColor: navColor,
+          height: navSize,
+          transition: "all 0.5s",
+        }}
+      >
         <div className={styles.leftInfo}>
           <Link to="/" onClick={() => setIsOpen(false)}>
             <img src={Logo} alt="logo" />
@@ -58,7 +89,10 @@ export const MobileHeader = () => {
         }`}
       >
         <div className={styles.menuContainer}>
-          <div className={styles.menuItemsContainer}>
+          <div
+            className={styles.menuItemsContainer}
+            style={{ color: fontColor }}
+          >
             <p
               className={`${styles.menuItem} ${
                 isOpen ? "sui-aos-down1" : "sui-aos-up"

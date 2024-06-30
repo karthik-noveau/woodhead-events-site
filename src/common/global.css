@@ -20,6 +20,14 @@ p {
 button {
   text-transform: unset !important;
 }
+#header-height-space {
+  height: 90px;
+}
+@media (max-width: 460px) {
+  #header-height-space {
+    height: 70px;
+  }
+}
 
 /*  ---------tap highlight in mobile--------- */
 html {

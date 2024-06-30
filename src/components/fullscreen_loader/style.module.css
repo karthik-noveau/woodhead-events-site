@@ -10,6 +10,7 @@
   justify-content: center;
   width: 100%;
   height: 100%;
+  z-index: 100000000;
 }
 .loaderWrapper img {
   width: 200px;

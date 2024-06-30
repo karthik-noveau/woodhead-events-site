@@ -4,8 +4,9 @@ import Button from "@mui/material/Button";
 import { ScrollToTop } from "../../common/scrollto_top";
 
 import styles from "./style.module.css";
+import "@14islands/r3f-scroll-rig/css";
 
-import HomeBanner from "../../images/home/home-bg.jpg";
+import HomeBanner1 from "../../images/home/home-bg.jpg";
 
 const OUR_SERVICES_LIST = [
   "Conferences and Seminars",
@@ -39,7 +40,9 @@ export default function Home() {
       </div>
 
       <div className={styles.whoWeAreContainer}>
-        <p className={styles.whoWeAreSectionTitle}>Who We Are</p>
+        <p className={`custom-cursor ${styles.whoWeAreSectionTitle}`}>
+          Who We Are
+        </p>
         <p className={styles.whoWeAreSectionInfo}>
           Woodhead Events, event management specialists from the house of
           Woodhead Creative. We are a dynamic team of seasoned marketers, event
@@ -66,7 +69,7 @@ export default function Home() {
           </div>
           <div className={styles.rightInfo}>
             <div className={styles.imgWrapper}>
-              <img src={HomeBanner} />
+              <img src={HomeBanner1} />
               <div className={styles.slandingButtonTopPositioned}>
                 <div className={styles.slandingButton}>
                   <span>Elevating Corporte Experiences</span>

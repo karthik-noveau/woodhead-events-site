@@ -1,0 +1,36 @@
+.cursor {
+  display: none;
+}
+
+/* Desktop version */
+
+@media screen and (min-width: 768px) {
+  .smallCursor {
+    display: block;
+    background-color: transparent;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    /* border: 1px solid #5c62ec; */
+    position: fixed;
+    top: 7px;
+    left: 9px;
+    z-index: 9999;
+    pointer-events: none;
+    /* transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.91s; */
+  }
+  .cursor {
+    display: block;
+    background-color: transparent;
+    height: 72px;
+    width: 72px;
+    border-radius: 50%;
+    /* border: 1px solid #5c62ec; */
+    position: fixed;
+    top: -31px;
+    left: -31px;
+    z-index: 9999;
+    pointer-events: none;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.91s;
+  }
+}

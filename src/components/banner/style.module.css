@@ -2,20 +2,20 @@
   width: 100%;
   height: 600px;
   position: relative;
+  overflow: hidden;
 }
 
-.bannerWrapper::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: var(--pageBannerImage);
-  background-size: cover;
-  filter: brightness(0.4);
-  z-index: 0;
+.bannerWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
 }
+.bannerWrapper span {
+  height: 100%;
+  filter: brightness(50%);
+}
+
 .bannerWrapper p {
   position: absolute;
   top: 50%;
@@ -23,4 +23,7 @@
   font-size: 50px;
   transform: translate(50%, -50%);
   color: #d2d2d2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 5px;
 }
